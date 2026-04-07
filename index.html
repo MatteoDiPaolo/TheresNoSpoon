@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>TheresNoSpoon</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <meta
+      name="description"
+      content="Why understanding the business makes you a better engineer (and vice versa)"
+    />
+    <meta name="author" content="Matteo Di Paolantonio" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="reveal/dist/reset.css" />
+    <link rel="stylesheet" href="reveal/dist/reveal.css" />
+    <link rel="stylesheet" href="reveal/dist/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="reveal/plugin/highlight/monokai.css" />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- ==================== TITLE SLIDE ==================== -->
+        <section>
+          <h2><span class="gs-text">There Is No Spoon</span></h2>
+          <small>The only way to be an engineer</small>
+          <br />
+          <img
+            height="300"
+            data-src="./imgs/1.png"
+            alt="Matrix spoon boy scene"
+          />
+          <p style="margin: 0px !important">
+            <small style="text-align: left; margin-right: 40px"
+              >Matteo Di Paolantonio</small
+            >
+            <small class="gs-text" style="text-align: right; margin-left: 40px"
+              >23/04/2026</small
+            >
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>Intro — CTO at Orbitant, Node talk but not only Node</li>
+              <li>Promise: real code, real mistakes</li>
+              <li>Not an MBA talk in disguise</li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- ==================== AGENDA SLIDE ==================== -->
+        <section>
+          <h2>Agenda</h2>
+          <ol>
+            <li><span>"There is no spoon"</span></li>
+            <li><span>The Sherpa tango</span></li>
+            <li><span>Engineering</span></li>
+            <li><span>Business</span></li>
+            <li><span>Innovation</span></li>
+            <li><span>From the basement to the tower</span></li>
+          </ol>
+          <aside class="notes">
+            <ul>
+              <li>Journey: question → real startup → AI reflection</li>
+              <li>Real code, real story</li>
+              <li>Feel free to interrupt — it's a conversation</li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- ==================== SECTION 1: "THERE IS NO SPOON" ==================== -->
+        <section>
+          <section>
+            <h2 style="margin-bottom: 20px">There is no spoon</h2>
+            <blockquote style="font-size: 0.6em">
+              &ldquo;Do not try and bend the spoon. That&rsquo;s impossible.
+              Instead, only try to realize the truth&hellip; there is no
+              spoon.&rdquo;
+            </blockquote>
+            <br />
+            <!-- Image idea: Matrix scene with the kid bending the spoon -->
+            <img
+              height="250"
+              data-src="./imgs/2.png"
+              alt="Matrix spoon boy scene"
+            />
+            <aside class="notes">
+              <ul>
+                <li>The Matrix scene — Neo, the kid, the spoon</li>
+                <li>
+                  Developers try to "bend the code" — optimize, refactor, scale
+                </li>
+                <li>The separation between code and business is artificial</li>
+                <li>There is no spoon. There never was.</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 20px">The question</h2>
+            <h4 style="margin-top: 0">
+              When was the last time you asked
+              <span class="gs-text">WHY</span> before asking
+              <span class="gs-text">HOW</span>?
+            </h4>
+            <br />
+            <img
+              height="300"
+              data-src="./imgs/3.gif"
+              alt="Ryan Reynolds But Why"
+            />
+            <aside class="notes">
+              <ul>
+                <li>Ticket lands → first instinct: HOW to implement</li>
+                <li>The real skill: asking WHY before HOW</li>
+                <li>Easy to stay in the code — harder to zoom out</li>
+                <li>
+                  You're not paid to write code — you're paid to solve problems
+                </li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 20px">The bet</h2>
+            <blockquote style="font-size: 0.6em; margin-top: 0">
+              &ldquo;If your values don&rsquo;t cost you money, they&rsquo;re
+              just opinions.&rdquo;
+            </blockquote>
+            <br />
+            <ul>
+              <li>
+                <span>4 Founders</span>
+              </li>
+              <li>
+                <span
+                  >All betting everything on a
+                  <span class="gs-text">WHY</span></span
+                >
+              </li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>
+                  3 execs at multinationals, 1 with a prior exit — all gave it
+                  up
+                </li>
+                <li>
+                  Through the Sherpa story I'll cover engineering, business and
+                  innovation
+                </li>
+                <li>A real startup journey to illustrate each pillar</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+
+        <!-- ==================== SECTION 2: THE SHERPA TANGO ==================== -->
+        <section>
+          <section>
+            <h2>The Sherpa tango</h2>
+            <small class="gs-text">Where we came from</small>
+            <br />
+            <img
+              height="350"
+              data-src="./imgs/5.png"
+              alt="Scent of a Woman tango scene"
+            />
+            <br />
+            <img
+              class="no-border"
+              style="margin-top: 10px"
+              height="40"
+              data-src="./imgs/5-logo.png"
+              alt="Sherpa Platform logo"
+            />
+            <aside class="notes">
+              <ul>
+                <li>Sherpa Platform — fintech for SMEs</li>
+                <li>
+                  Hypothesis: digital agencies run by people with no financial
+                  knowledge
+                </li>
+                <li>Decisions based on cash in/out, not margins or EBITDA</li>
+                <li>Doing tango with the WHY — that was all the work we did</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Validate before you build</h2>
+            <ul>
+              <li>
+                <span
+                  >Preparation:
+                  <a href="https://www.momtestbook.com/" target="_blank"
+                    ><span class="gs-text">The Mom Test</span></a
+                  >
+                  &mdash;
+                  <a
+                    href="https://www.ycombinator.com/library/carousel/How%20to%20Start%20a%20Startup%20-%20A%20course%20Y%20Combinator%20taught%20at%20Stanford"
+                    target="_blank"
+                    ><span class="gs-text">How to Start a Startup</span></a
+                  >
+                  &mdash;
+                  <a href="https://gtmstrategist.com/" target="_blank"
+                    ><span class="gs-text">Go-To-Market Toolkit</span></a
+                  >
+                  ...and many others</span
+                >
+              </li>
+              <li>
+                <span
+                  >Customer first: interviews &mdash; money on the table &mdash;
+                  early adopters</span
+                >
+              </li>
+              <li><span>Iterate fast: lean canvas</span></li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Hit the books: Mom Test, lean canvas, startup courses</li>
+                <li>
+                  Split work by strengths: tech, product, marketing, corporate
+                </li>
+                <li>"What a great idea" doesn't count — paying counts</li>
+                <li>Goal: 15 early adopters minimum</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">The Wizard of Oz</h2>
+            <small class="gs-text">Our product was a hand-crafted PDF</small>
+            <br />
+            <img
+              height="300"
+              data-src="./imgs/7.gif"
+              alt="Wizard of Oz behind curtain"
+            />
+            <aside class="notes">
+              <ul>
+                <li>
+                  Couldn't build everything automated — simulated manually
+                </li>
+                <li>Monthly PDF delivered to each early adopter</li>
+                <li>No app, no dashboards — but real feedback</li>
+                <li>Saved months of unnecessary development</li>
+                <li>The problem was solved without technology</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>THE PDF</h2>
+            <br />
+            <div class="row">
+              <div class="column">
+                <img
+                  height="200"
+                  data-src="./imgs/pdf-1.png"
+                  alt="PDF screenshot 1"
+                />
+                <img
+                  height="200"
+                  data-src="./imgs/pdf-3.png"
+                  alt="PDF screenshot 3"
+                />
+              </div>
+              <div class="column">
+                <img
+                  height="200"
+                  data-src="./imgs/pdf-2.png"
+                  alt="PDF screenshot 2"
+                />
+                <img
+                  height="200"
+                  data-src="./imgs/pdf-4.png"
+                  alt="PDF screenshot 4"
+                />
+              </div>
+            </div>
+            <aside class="notes">
+              <ul>
+                <li>This is the actual PDF we delivered to clients</li>
+                <li>Hand-crafted every month — no automation</li>
+                <li>This was "the product" for months</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>The minimum to get started</h2>
+            <small class="gs-text">A month and a half to production</small>
+            <ul>
+              <li><span>Landing page</span></li>
+              <li><span>Login</span></li>
+              <li>
+                <span
+                  ><span class="gs-text">Holded</span> integration (ERP
+                  Data)</span
+                >
+              </li>
+              <li>
+                <span
+                  ><span class="gs-text">GoCardless</span> integration (Bank
+                  Data)</span
+                >
+              </li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Landing, login, integrations screen — that's it</li>
+                <li>
+                  Holded API key + GoCardless bank credentials on onboarding
+                </li>
+                <li>
+                  After onboarding: user can't interact, but we have everything
+                  in DB
+                </li>
+                <li>With that, we were in production in ~6 weeks</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Business problem solved</h2>
+            <small class="gs-text">... so far</small>
+            <br />
+            <img
+              height="400"
+              data-src="./imgs/8.gif"
+              alt="Skinny Homer Simpson"
+            />
+            <aside class="notes">
+              <ul>
+                <li>
+                  The whole point: you don't need tech to solve the problem
+                  first
+                </li>
+                <li>A PDF was enough to validate and learn</li>
+                <li>Tech came later — business understanding came first</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+
+        <!-- ==================== SECTION 3: ENGINEERING ==================== -->
+        <section>
+          <section>
+            <h2>Engineering</h2>
+            <br />
+            <img height="350" data-src="./imgs/9.gif" alt="Engineering GIF" />
+            <aside class="notes">
+              <ul>
+                <li>Jose asked for code — not letting him down</li>
+                <li>
+                  Day-one tech stack, every decision made sense at the time
+                </li>
+                <li>Each one came with a spoiler — watch out</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Tech stack</h2>
+            <ul>
+              <li>
+                <span
+                  ><span class="gs-text">Vercel</span> &mdash; IaaS, merge to
+                  main and you're in production</span
+                >
+                <br /><small class="spoiler-label fragment"
+                  >Spoiler: serverless and heavy data ingestion don't get
+                  along</small
+                >
+              </li>
+              <li class="fragment">
+                <span
+                  ><span class="gs-text">Supabase</span> &mdash; SQL, auth with
+                  JWT (no vendor lock-in)</span
+                >
+                <br /><small class="spoiler-label fragment"
+                  >Spoiler: this one we actually got right, but used it
+                  wrong</small
+                >
+              </li>
+              <li class="fragment">
+                <span
+                  ><span class="gs-text">NextJS</span> &mdash; SSR, Server
+                  Actions, "no brainer"</span
+                >
+                <br /><small class="spoiler-label fragment"
+                  >Spoiler: a NextJS monolith is basically impossible to
+                  move</small
+                >
+              </li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>
+                  Vercel — great DX, connect repo, environments ready instantly
+                </li>
+                <li>Next — knew some JS, SSR + Server Actions felt obvious</li>
+                <li>Supabase — own JWTs, no vendor lock-in</li>
+                <li>Cursor — hadn't written code in years, needed a copilot</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">Architecture</h2>
+            <img
+              style="
+                background-color: #ffffff;
+                padding: 10px;
+                border-radius: 5px;
+              "
+              height="500"
+              data-src="./imgs/arch.png"
+              alt="Sherpa Platform architecture diagram"
+            />
+            <aside class="notes">
+              <ul>
+                <li>FE + BFF on Vercel, Supabase for DB</li>
+                <li>Inngest for daily jobs: ERP sync, bank sync, alerts</li>
+                <li>
+                  4 third-party integrations: Holded, FacturaDirecta,
+                  GoCardless, WealthReader
+                </li>
+                <li>Betterstack + Slack for monitoring and alerts</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">The first timeout</h2>
+            <small class="gs-text"
+              >Serverless + ingesting data for 10 clients</small
+            >
+            <br />
+            <img
+              height="250"
+              data-src="./imgs/10.gif"
+              alt="This is fine GIF"
+              style="margin-bottom: 5px"
+            />
+            <ul>
+              <li>
+                <span>Vercel functions have a 5 min timeout</span>
+              </li>
+              <li>
+                <span>10 users &times; 30 seconds each = kaboom</span>
+              </li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Background job + serverless = trouble</li>
+                <li>Vercel: fixed 5-minute timeout, no way around it</li>
+                <li>10 clients × ~30s each = hits the wall</li>
+                <li>This is fine. (it's not fine)</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>The first timeout</h2>
+            <small class="gs-text">Inngest</small>
+            <pre
+              style="font-size: 9px"
+            ><code class="hljs js" style="word-wrap: break-word;">
+export default inngest.createFunction(
+  { id: 'banks-sync', retries: 0 },
+  { cron: 'TZ=Europe/Madrid 0 6,15 * * *' },
+  async ({ step }) => {
+    const connections = await step.run(`banks-sync-companies`, async () => {
+      log.info('start syncing bank data for each company via inngest')
+      return prisma.bankConnection.findMany()
+    })
+
+    await step.run('send-connections-bank-sync-events', async () => {
+      const events = connections.map((connection) => ({
+        name: 'bank/sync.requested',
+        data: { connectionUuid: connection.uuid },
+      }))
+
+      await inngest.send(events)
+      return { eventsSent: events.length }
+    })
+
+    return {
+      count: connections.length,
+      message: 'triggered syncing bank data for each company and bank',
+    }
+  }
+)
+            </code></pre>
+            <aside class="notes">
+              <ul>
+                <li>Inngest — Workflows as a Service, step functions</li>
+                <li>Each step has its own timeout, isolated retries</li>
+                <li>
+                  Cron → fetch active clients → sync ERP + bank per client
+                </li>
+                <li>Not rocket science, but it solved the problem cleanly</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">The coupled data model</h2>
+            <small class="gs-text">Holded forever... or not</small>
+            <br />
+            <div class="row">
+              <div class="column">
+                <img
+                  height="420"
+                  data-src="./imgs/11.png"
+                  alt="Holded JSON data model"
+                />
+              </div>
+              <div class="column">
+                <pre
+                  style="font-size: 9px"
+                ><code class="hljs js" style="word-wrap: break-word;">
+model ErpContact {
+  uuid                   String       @id @default(uuid())
+  externalSystem         ErpExternalSystem
+  externalSystemId       String
+  name                   String
+  code                   String?
+  email                  String?
+  country                String?
+  zipCode                String?
+  externalSystemDataHash String
+  erpConnectionUuid      String
+  erpConnection          ErpConnection
+  erpDocument            ErpDocument[]
+  erpRecurringDocument   ErpRecurringDocument[]
+
+  @@index([erpConnectionUuid])
+  @@index([erpConnectionUuid, name])
+  @@map("erp_contact")
+}
+                </code></pre>
+              </div>
+            </div>
+            <aside class="notes">
+              <ul>
+                <li>
+                  FacturaDirecta + WealthReader arrived → model wasn't agnostic
+                </li>
+                <li>Everything coupled to Holded/GoCardless schemas</li>
+                <li>No real plug-and-play possible</li>
+                <li>Big refactor: canonical model + per-provider adapters</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">The coupled data model</h2>
+            <small class="gs-text">Make it agnostic</small>
+            <br />
+            <img
+              style="
+                background-color: #ffffff;
+                padding: 10px;
+                border-radius: 5px;
+              "
+              height="450"
+              data-src="./imgs/11b.png"
+              alt="Agnostic data model mapping"
+            />
+            <aside class="notes">
+              <ul>
+                <li>
+                  Holded on the left, FacturaDirecta on the right — different
+                  schemas
+                </li>
+                <li>Canonical model in the middle: erp_contact</li>
+                <li>Map fields from each provider to our own model</li>
+                <li>New provider = new mapping, same canonical model</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">The coupled data model</h2>
+            <small class="gs-text">Make it use deltas</small>
+            <br />
+            <pre
+              style="font-size: 9px"
+            ><code class="hljs js" style="word-wrap: break-word;">
+const calculateDelta = &lt;
+  T extends {
+    externalSystemId: string | null
+    internalId?: string
+    externalSystemDataHash: string
+    uuid: string
+  },
+&gt;(
+  fromDb: T[],
+  fromSource: T[],
+  key: keyof T,
+): DeltaResult&lt;T&gt; =&gt; {
+  const fromDbMap = new Map(fromDb.map((item) =&gt; [item[key], item]))
+  const fromSourceMap = new Map(fromSource.map((item) =&gt; [item[key], item]))
+
+  const toCreate = fromSource.filter((item) =&gt; !fromDbMap.has(item[key]))
+  const toDelete = fromDb.filter((item) =&gt; !fromSourceMap.has(item[key]))
+  const toUpdate: T[] = []
+
+  fromDb.forEach((dbItem) =&gt; {
+    const sourceItem = fromSourceMap.get(dbItem[key])
+    if (
+      sourceItem &amp;&amp;
+      sourceItem.externalSystemDataHash !== dbItem.externalSystemDataHash
+    ) {
+      const itemToUpdate = { ...sourceItem, uuid: dbItem.uuid }
+      toUpdate.push(itemToUpdate)
+    }
+  })
+
+  toDelete.forEach((deletedItem) =&gt; { fromDbMap.delete(deletedItem[key]) })
+  toUpdate.forEach((updatedItem) =&gt; { fromDbMap.set(updatedItem[key], updatedItem) })
+  toCreate.forEach((createdItem) =&gt; { fromDbMap.set(createdItem[key], createdItem) })
+
+  return { toCreate, toDelete, toUpdate, upToDate: Array.from(fromDbMap.values()) }
+}
+            </code></pre>
+            <aside class="notes">
+              <ul>
+                <li>Delta calculation: compare DB state vs source state</li>
+                <li>Hash-based change detection — only update what changed</li>
+                <li>
+                  Generic function: works for contacts, invoices, transactions
+                </li>
+                <li>toCreate, toDelete, toUpdate — clean and efficient</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">The coupled architecture</h2>
+            <small class="gs-text">Server actions, one night stand</small>
+            <br />
+            <pre
+              style="font-size: 9px"
+            ><code class="hljs js" style="word-wrap: break-word;">
+export async function getProfitAndLossReport({
+  companyGroupId,
+  date,
+}: {
+  companyGroupId: string
+  date: string
+}): Promise&lt;CompanyGroupReport&gt; {
+  const dateFrom = moment.utc(date).startOf('year')
+  const isCurrentYear = moment.utc().year() === moment.utc(date).year()
+  const ytdDate = moment.utc(date).subtract(1, 'month').endOf('month')
+  const dateTo = isCurrentYear ? ytdDate : moment.utc(date).endOf('year')
+
+  const companyUuids = await getCompanyIdsByCompanyGroupId(companyGroupId)
+  if (companyUuids.length === 0) {
+    return { success: false, reason: ErrorReason.UNAUTHORIZED }
+  }
+
+  try {
+    const companiesProfitAndLoss = await Promise.all(
+      companyUuids.map(async (companyUuid) =&gt;
+        generateCompanyProfitAndLossReport({ companyUuid, dateFrom, dateTo })
+      )
+    )
+
+    return { success: true, data: companiesProfitAndLoss }
+  } catch (err) {
+    log.error(
+      { err, company_group_uuid: companyGroupId },
+      'Error generating profit and loss report'
+    )
+    return { success: false, reason: ErrorReason.INTERNAL_ERROR }
+  }
+}
+            </code></pre>
+            <aside class="notes">
+              <ul>
+                <li>Server actions seemed like a no-brainer at first</li>
+                <li>No clear separation between frontend and backend</li>
+                <li>Impossible to extract into services later</li>
+                <li>Had to migrate everything to endpoints</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">The coupled architecture</h2>
+            <small class="gs-text">Old good APIs</small>
+            <br />
+            <pre
+              style="font-size: 9px"
+            ><code class="hljs js" style="word-wrap: break-word;">
+// GET balance report by company group and year
+export const GET = withAuth(
+  async (request, { user, log }, { params }: { params: Promise&lt;Params&gt; }) =&gt; {
+    try {
+      const { id: companyGroupId } = await params
+      const searchParams = new URL(request.url).searchParams
+      const companyId = searchParams.get('companyId')
+
+      if (!companyId) {
+        return NextResponse.json(
+          { error: 'companyId query parameter is required' },
+          { status: 400 }
+        )
+      }
+      await resolveAuthorizedCompanyScope({
+        user,
+        requestedCompanyGroupId: companyGroupId,
+        requestedCompanyIds: [companyId],
+      })
+      const yearParam = searchParams.get('year')
+      if (!yearParam) {
+        return NextResponse.json(
+          { error: 'year query parameter is required' },
+          { status: 400 }
+        )
+      }
+      const year = parseInt(yearParam, 10)
+      if (isNaN(year)) {
+        return NextResponse.json(
+          { error: 'year must be a valid number' },
+          { status: 400 }
+        )
+      }
+
+      const report = await balanceReportService.getBalanceReport(
+        companyId,
+        year
+      )
+      return NextResponse.json(report)
+    } catch (err) {
+      log.error({ err }, 'Error getting balance report')
+      return handleHttpError(err)
+    }
+  }
+)
+            </code></pre>
+            <aside class="notes">
+              <ul>
+                <li>Migrated from server actions to proper API endpoints</li>
+                <li>Clear contract: request in, response out</li>
+                <li>Can be extracted to a standalone service later</li>
+                <li>The boring solution that actually scales</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">It doesn't scale</h2>
+            <small class="gs-text">Our mantra</small>
+            <br />
+            <img
+              height="400"
+              data-src="./imgs/12.png"
+              alt="Bart Simpson it doesn't scale chalkboard"
+            />
+            <aside class="notes">
+              <ul>
+                <li>"It doesn't scale" — the phrase we kept repeating</li>
+                <li>
+                  Serverless, monolith Next, server actions — all hitting walls
+                </li>
+                <li>
+                  From an engineering perspective, we desired Endpoints only,
+                  microservice architecture, proper infra
+                </li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+
+        <!-- ==================== SECTION 4: BUSINESS ==================== -->
+        <section>
+          <section>
+            <h2 style="margin-bottom: 10px">Business</h2>
+            <small class="gs-text"
+              >The source of truth &mdash; More clients, more money</small
+            >
+            <ul>
+              <li><span>Serverless timeouts: more data</span></li>
+              <li><span>Coupled data model: new integrations</span></li>
+              <li><span>Server actions: higher usage</span></li>
+            </ul>
+            <p>
+              <span class="strikethrough">It doesn't scale</span>
+              <span class="gs-text"
+                >&rarr; It scales according to the business</span
+              >
+            </p>
+            <aside class="notes">
+              <ul>
+                <li>Every technical spoiler had a business reason behind it</li>
+                <li>More clients = more money = more pressure on the system</li>
+                <li>
+                  It wasn't that it didn't scale — it scaled with the business
+                </li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">ICE Framework</h2>
+            <small class="gs-text">How we prioritized what to build</small>
+            <br />
+            <img
+              style="
+                background-color: #ffffff;
+                padding: 10px;
+                border-radius: 5px;
+                max-width: 90%;
+              "
+              data-src="./imgs/14.png"
+              alt="ICE Framework spreadsheet"
+            />
+            <aside class="notes">
+              <ul>
+                <li>ICE: Impact × Confidence × Ease — score 1–10 each</li>
+                <li>Real backlog from Sherpa — not a hypothetical</li>
+                <li>Data beats "whoever shouts loudest"</li>
+                <li>Any developer can use this tomorrow</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">Helping the ICP</h2>
+            <small class="gs-text">... the main goal</small>
+            <br />
+            <ul>
+              <li>
+                <span
+                  >Mini tools &mdash; free apps (e.g.
+                  <span class="gs-text">project-profitability</span>,
+                  <span class="gs-text">financing-advisor</span>)</span
+                >
+              </li>
+              <li>
+                <span
+                  >Blog &mdash; tech authority (e.g.
+                  <a
+                    href="https://sherpaplatform.com/integrar-erps-contabilidad-facturacion/"
+                    target="_blank"
+                    ><span class="gs-text">integrating ERPs</span></a
+                  >)</span
+                >
+              </li>
+              <li>
+                <span
+                  >Ebooks &mdash; aggregated data (e.g.
+                  <span class="gs-text">market benchmark</span>)</span
+                >
+              </li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>
+                  Helping the ICP was the main goal — everything else followed
+                </li>
+                <li>Niching down: digital agencies → same tools, same pains</li>
+                <li>Webinars, newsletter, and more on top of these three</li>
+                <li>
+                  An engineer who gets this thinks growth, not just tickets
+                </li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">The tradeoff</h2>
+            <small class="gs-text"
+              >... always to solve a business problem</small
+            >
+            <br />
+            <blockquote style="font-size: 0.5em">
+              &ldquo;You can take on all the technical tasks as a founder at the
+              cost of time, or you can delegate to people better than you at the
+              cost of money.&rdquo;
+            </blockquote>
+            <ul>
+              <li>
+                <span>A <span class="gs-text">frontend</span> wizard</span>
+              </li>
+              <li>
+                <span>A <span class="gs-text">unicorn</span> wizard</span>
+              </li>
+            </ul>
+            <br />
+            <img
+              height="200"
+              data-src="./imgs/15.gif"
+              alt="Tradeoff GIF"
+              style="display: block; margin: 0 auto"
+            />
+            <aside class="notes">
+              <ul>
+                <li>Startup tradeoff: time vs money, not just tech debt</li>
+                <li>Frontend wizard: a coding machine</li>
+                <li>
+                  Unicorn wizard: backend + infra + frontend: getting things
+                  done
+                </li>
+                <li>Network is always your most valuable resource</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+
+        <!-- ==================== SECTION 5: INNOVATION / AI ==================== -->
+        <section>
+          <section>
+            <h2 style="margin-bottom: 10px">Innovation</h2>
+            <blockquote style="font-size: 0.6em">
+              &ldquo;Doing the latest instead of always doing the same&rdquo;
+            </blockquote>
+            <img height="350" data-src="./imgs/16.gif" alt="Innovation GIF" />
+            <aside class="notes">
+              <ul>
+                <li>"I know kung fu" — that scene with Neo</li>
+                <li>
+                  Cursor did that for me: real-time upskilling while building
+                </li>
+                <li>Hadn't written code in years — suddenly had a copilot</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 20px">AI as a Multiplier</h2>
+            <ul>
+              <li><span>Vercel + NextJS + Supabase</span></li>
+              <li><span>ChatGPT</span></li>
+              <li><span>Cursor</span></li>
+            </ul>
+            <br />
+            <p><span class="gs-text">Claude, where were you?</span></p>
+            <aside class="notes">
+              <ul>
+                <li>Each tool multiplied what we could do with a tiny team</li>
+                <li>ChatGPT for brainstorming, research, content</li>
+                <li>Cursor as copilot for a rusty founder</li>
+                <li>Claude changed the game — engine for the whole team</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">Claude</h2>
+            <small class="gs-text">Game changer</small>
+            <br />
+            <img
+              height="500"
+              data-src="./imgs/17.png"
+              alt="Claude folder structure with agents rules and skills"
+            />
+            <aside class="notes">
+              <ul>
+                <li>This is our .claude folder — agents, rules, skills</li>
+                <li>
+                  Investment: time upfront to set up, saves money long term
+                </li>
+                <li>Agents: backend-architect, frontend-developer</li>
+                <li>Rules: code-style, security, architecture-migration</li>
+                <li>Skills: api-design-expert, demo-report, ship</li>
+                <li>
+                  The tradeoff again: time vs money — but now AI tips the
+                  balance
+                </li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2 style="margin-bottom: 10px">Code is becoming a commodity</h2>
+            <small class="gs-text"
+              >AI doesn't replace you (right now) &mdash; it amplifies
+              you</small
+            >
+            <br />
+            <p>
+              <span class="gs-text">What's left?</span> Understanding the
+              problem.
+            </p>
+            <img
+              height="250"
+              data-src="./imgs/19.gif"
+              alt="Neo stopping bullets Matrix"
+            />
+            <p>
+              <small
+                >"Anyone can code" &mdash; but not anyone can understand
+                <span class="gs-text">what to build and why</span></small
+              >
+            </p>
+            <aside class="notes">
+              <ul>
+                <li>Value of writing code is going down — not disappearing</li>
+                <li>Value of understanding context + business is going up</li>
+                <li>"I can code" alone → level playing field with everyone</li>
+                <li>
+                  "I can code AND understand the business" → impact multiplier
+                </li>
+                <li>AI amplifies what you bring — bring the right things</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+
+        <!-- ==================== SECTION 6: FROM THE BASEMENT TO THE TOWERS ==================== -->
+        <section>
+          <section>
+            <h2>It was always the <span class="gs-text">WHY</span></h2>
+            <br />
+            <ul>
+              <li>
+                <span
+                  >We asked <span class="gs-text">WHY</span> before building
+                  &rarr; a PDF validated the problem</span
+                >
+              </li>
+              <li>
+                <span
+                  >Every technical spoiler? A business
+                  <span class="gs-text">WHY</span> in disguise</span
+                >
+              </li>
+              <li>
+                <span
+                  >AI commoditizes the HOW &rarr; the
+                  <span class="gs-text">WHY</span> is what's left</span
+                >
+              </li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Connecting the dots: the WHY was the thread all along</li>
+                <li>
+                  S2: validated with a PDF before writing code — because we
+                  understood the WHY
+                </li>
+                <li>
+                  S3→S4: every timeout, every refactor had a business reason —
+                  the WHY drove the HOW
+                </li>
+                <li>
+                  S5: AI makes the HOW cheaper — the WHY becomes the
+                  differentiator
+                </li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>From the basement to the tower</h2>
+            <small>
+              <span class="strikethrough">Product Market Fit</span>
+              <span class="gs-text"> &rarr; Product Partner Fit</span>
+            </small>
+            <br /><br />
+            <div class="row">
+              <div class="column">
+                <img
+                  height="250"
+                  data-src="./imgs/20-basement.png"
+                  alt="The basement"
+                />
+              </div>
+              <div class="column">
+                <img
+                  height="250"
+                  data-src="./imgs/20-towers.png"
+                  alt="The towers"
+                />
+              </div>
+            </div>
+            <aside class="notes">
+              <ul>
+                <li>Sherpa didn't find classic PMF with digital agencies</li>
+                <li>
+                  The result: not classic PMF, but Product Partner Fit — people
+                  wanted to work with us because we understood the problem
+                </li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>"There is no spoon"</h2>
+            <br />
+            <div class="row">
+              <div class="column">
+                <p style="margin-bottom: 5px">
+                  <small>The engineer who asks <em>HOW</em></small>
+                </p>
+                <ul style="font-size: 0.6em">
+                  <li>Writes code</li>
+                  <li>Follows specs</li>
+                  <li>Builds features</li>
+                </ul>
+              </div>
+              <div class="column">
+                <p style="margin-bottom: 5px">
+                  <small
+                    >The engineer who asks
+                    <span class="gs-text"><em>WHY</em></span></small
+                  >
+                </p>
+                <ul style="font-size: 0.6em">
+                  <li>Solves problems</li>
+                  <li>Drives decisions</li>
+                  <li>Generates impact</li>
+                </ul>
+              </div>
+            </div>
+            <br />
+            <blockquote class="fragment" style="font-size: 0.55em">
+              &ldquo;Do not try and bend the code. Instead, only try to realize
+              the truth&hellip;
+              <span class="gs-text">there is no code without a WHY.</span
+              >&rdquo;
+            </blockquote>
+            <aside class="notes">
+              <ul>
+                <li>
+                  Left side: what most engineers do — and it's not wrong, but
+                  it's not enough
+                </li>
+                <li>
+                  Right side: the engineer who asks WHY — every technical
+                  decision is a business decision
+                </li>
+                <li>
+                  Callback to the opening: the spoon boy scene — but now
+                  reframed through everything we've seen
+                </li>
+                <li>
+                  There is no separation between code and business — there never
+                  was
+                </li>
+                <li>That's the only way to be an engineer</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+
+        <!-- ==================== CLOSING SLIDE ==================== -->
+        <section>
+          <h2>Thank you!</h2>
+          <br />
+          <img
+            style="background-color: transparent; box-shadow: none"
+            height="400"
+            data-src="./imgs/23.gif"
+            alt="Thank you GIF"
+          />
+          <aside class="notes">
+            <ul>
+              <li>Thanks Jose for the invite</li>
+              <li>
+                Full Sherpa story on Manfred — article covers the whole tango
+              </li>
+              <li>Questions, thoughts — that's what I'm here for</li>
+            </ul>
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <script type="module">
+      import Reveal from './reveal/dist/reveal.esm.js'
+      import RevealZoom from './reveal/plugin/zoom/zoom.esm.js'
+      import RevealNotes from './reveal/plugin/notes/notes.esm.js'
+      import RevealSearch from './reveal/plugin/search/search.esm.js'
+      import RevealMarkdown from './reveal/plugin/markdown/markdown.esm.js'
+      import RevealHighlight from './reveal/plugin/highlight/highlight.esm.js'
+
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        plugins: [
+          RevealZoom,
+          RevealNotes,
+          RevealSearch,
+          RevealMarkdown,
+          RevealHighlight,
+        ],
+      })
+    </script>
+  </body>
+</html>

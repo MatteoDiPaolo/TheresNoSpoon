@@ -1,0 +1,96 @@
+/* Primary accent color */
+.gs-text {
+  color: #17ae8e;
+}
+
+.primary-text {
+  color: #17ae8e;
+}
+
+/* Secondary accent colors */
+.secondary-text {
+  color: #fe9f4d;
+}
+
+.mr-red-text {
+  color: #e6194b;
+}
+
+.mr-blonde-text {
+  color: #ffe119;
+}
+
+.mr-green-text {
+  color: #3cb44b;
+}
+
+.mr-blue-text {
+  color: #4363d8;
+}
+
+.mr-pink-text {
+  color: #e6beff;
+}
+
+/* List styling */
+li {
+  color: #17ae8e;
+  margin-bottom: 1rem;
+}
+
+li span {
+  color: white;
+}
+
+/* Image styling */
+img {
+  border: 3px solid #17ae8e !important;
+}
+
+img.no-border {
+  border: none !important;
+}
+
+/* Layout utilities */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+/* Animation */
+.bounce-down {
+  animation: bounce-down 2s ease infinite;
+}
+
+@keyframes bounce-down {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+
+/* Transform */
+.perspective {
+  transform: rotateY(-15deg);
+}
+
+/* Talk-specific: spoiler label */
+.spoiler-label {
+  color: #e6194b;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+/* Talk-specific: strikethrough for PMF */
+.strikethrough {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
