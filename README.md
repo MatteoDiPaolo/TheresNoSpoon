@@ -1,6 +1,6 @@
 # There Is No Spoon
 
-Why understanding the business makes you a better engineer (and vice versa)
+Why understanding the business makes you a better engineer
 
 ## View the presentation
 
